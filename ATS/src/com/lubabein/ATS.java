@@ -11,7 +11,7 @@ public class ATS {
     public void startCall(String callerNumber, String recipientNumber) {
     	System.out.println("there was a call from "+callerNumber + " to "+ recipientNumber);
     	if (this.ongoingCalls.containsKey(recipientNumber)) {
-    		addInWait(callerNumber, recipientNumber);	
+    		this.addInWait(callerNumber, recipientNumber);	
         } 
     	else {
     		System.out.println(callerNumber + " started call to " + recipientNumber);
